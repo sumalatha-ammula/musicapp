@@ -24,6 +24,8 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Mulish:wght@200;400;700&display=swap');
+
 
 /**
  * Ionic Dark Mode
@@ -35,3 +37,225 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+:root{
+--font: "Nunito";
+--white:white;
+--radius:8px;
+--lightgray:#898F93,
+--ion-color-primary:#222428 !important
+}
+
+.fillScreen{
+   --background: linear-gradient(180deg, #05062F 0%, #010101 100%) !important;
+   --padding:8px !important;
+   --padding-top:56px  !important
+}
+*{
+   font-family:var(--font) !important;
+   color:var(--white) !important;
+}
+ion-list,ion-item{
+   --background:transparent !important;
+   background: transparent !important;
+}
+
+.tunes, .signup{
+   display: flex;
+   justify-content: space-between;
+}
+.tunes ion-item,ion-title{
+font-size: 24px;
+font-weight: 600;
+line-height: 32.74px;
+text-align: left;
+color:var(--white);
+}
+ion-select{
+   color:var(--white);
+   display: flex;
+   justify-content: center;
+   width: max-content;
+   margin: 0px auto;
+   background:  #151C32;
+   background: #151C32;
+    border-radius: 8px;  
+
+}
+ion-select{
+   max-width: 70% !important;
+}
+.Taal div,.scales a{
+   display: flex !important;
+   justify-content: center !important;
+   background:  #151C32;  
+   border-radius: var(--radius);
+   padding:12px 10px !important;
+   gap:4px
+}
+
+ion-range {   
+   --bar-background: #413955;   
+    --bar-background-active: radial-gradient(50% 50% at 50% 50%, #0A41C8 0%, #749DFF 100%);;
+    --bar-height: 12px;
+    --bar-border-radius: 8px;
+   --knob-background: radial-gradient(50% 50% at 50% 50%, #0A41C8 0%, #749DFF 100%);
+    --knob-size: 27px;
+    --pin-background: #d7d8da;
+    --pin-color: #fff;
+ }
+ .speed>ion-col:first-child{
+   display: flex;
+   justify-content:flex-start;
+   align-items: center;
+ }
+//  .sc-ion-select-popover-md{
+//    --padding:0 0px !important
+//  }
+.selectpopover{
+   display: flex;
+   justify-content: center;
+   background: #151C32 !important;
+   border-radius: 8px; 
+   padding:0 0px !important
+}
+
+ .signup ion-item label{
+font-size: 31px;
+font-weight: 400;
+line-height: 40px;
+text-align: left;
+   color:var(--white);
+ }
+ .signup ion-item a{
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: -0.011em;
+text-align: right;
+color:var(--white) !important;
+ }
+ a.active{
+   color:white;
+   background: radial-gradient(50% 50% at 50% 50%, #0A41C8 0%, #749DFF 100%) !important;
+ }
+ .radio-icon{
+   border-color: red !important;
+ }
+ #custom-radio.native-wrapper .radio-icon{
+   --border-color:var(--white) !important;
+ }
+ .popover-viewport {
+   --offset-x: -31.5% !important;
+   --offset-y: 21px !important;
+   --width: 98% !important;
+   background:  #151C32; 
+}
+   ion-input{
+      background: #FFFFFF;
+      border-radius:var(--radius);
+      color: #898F93;
+   }
+   .password {
+padding-top:20px !important;
+   }
+  ion-input .native-input{
+      color: #898F93 !important;
+      padding:0px 10px !important
+   }
+   .button-clear span{
+      --ion-color:var(--lightgray) !important;
+      --color: var(--lightgray) !important;
+   }
+   .button-native {
+   // --color: var(--lightgray) !important;
+   --color: red !important;
+ }
+ .errorvalidation{
+   padding-left:16px;
+   padding-top:6px !important
+ }
+ .email{
+   padding:2px 0 !important
+ }
+ ion-checkbox{
+   --border-color:white !important;
+   --checkbox-background:#151C32 !important ;
+ }
+ .button-solid{
+   --background: #ACB3C2 !important;
+   display: flex;
+   --border-radius: 100px !important;
+padding:16px 14px !important
+ }
+ .terms{
+   position: absolute;
+    width: 100%;
+    bottom: 10px;
+ }
+ .valid {
+ --background: radial-gradient(50% 50% at 50% 50%, #0A41C8 0%, #749DFF 100%) !important;
+ }
+ :host(.button-clear) .button-inner  {
+   --color: var(--ion-color-primary ) !important;
+}
+.button-inner{
+   --color:var(--ion-color-primary) !important;
+}
+.playpause ion-icon{
+   background: 
+radial-gradient(50% 50% at 50% 50%, #0A41C8 0%, #749DFF 100%);
+padding: 10px;
+    border-radius: 50%;
+    font-size: 46px
+
+}
+.prevnect      
+{
+   font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.musictabla{
+   background-color: #151C32 !important;
+   border-radius:8px !important
+}
+
+ion-radio{
+   --color-checked:white !important;
+   --color:white !important
+ }
+ 
+ ion-label.item-radio-checked,ion-label.item-radio {
+   --color:white;
+ }
+ 
+ .item-radio-checked ion-label,.item-radio ion-label {
+   --color: white !important;
+ }
+ ion-select {
+   &::part(container) {
+       width: 100%;
+   }
+}
+//  Force text-wrap on <ion-select>
+ion-select::part(placeholder),
+ion-select::part(text) {
+  white-space: normal !important;
+}
+// Force text-wrap on <ion-select-option>'s when shown in an Ionic Alert
+ion-alert.select-alert {
+  // These widths are pretty arbitrary, so you're use-case(s) could required different widths:
+  --width: 33vw !important;
+  --max-width: 66vw !important;
+
+  .select-interface-option .alert-radio-label,
+  .select-interface-option .alert-checkbox-label {
+    white-space: normal !important;
+  }
+}
+.alert-wrapper {
+   width: 100% !important;
+   max-width: 100% !important;
+   }
+  
